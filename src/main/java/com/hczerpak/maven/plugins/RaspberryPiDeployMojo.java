@@ -29,7 +29,7 @@ public class RaspberryPiDeployMojo extends AbstractMojo {
     @Parameter( property = "password", defaultValue = "raspberry" )
     private String password;
 
-    @Parameter( property = "remoteDirectory", defaultValue = "~/${project.version}/target")
+    @Parameter( property = "remoteDirectory", defaultValue = "~/${project.name}/target")
     private String remoteDirectory;
 
     public void execute() throws MojoExecutionException
