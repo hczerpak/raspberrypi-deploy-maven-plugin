@@ -91,7 +91,7 @@ public class SshSession implements AutoCloseable {
                     while (true) {
                         int len = fileInputStream.read(buf, 0, buf.length);
                         if (len <= 0) break;
-                        out.write(buf, 0, len); //out.flush();
+                        out.write(buf, 0, len);
                     }
                     // send '\0'
                     buf[0] = 0;
@@ -101,7 +101,7 @@ public class SshSession implements AutoCloseable {
                     if (in.available() > 0 && in.read() != 0)
                         throw new MojoExecutionException("Upload failed: " + localFile);
                 }
-                Thread.sleep(1000); //FIXME WHY. IS. THIS. REQUIRED for this to work??????
+                Thread.sleep(1000); //FIXME WHY. IS. THIS. LINE. REQUIRED. TO. MAKE. IT. WORK??????
             }
             channel.disconnect();
         } catch (InterruptedException | IOException | JSchException e) {

@@ -2,6 +2,7 @@ package com.hczerpak.maven.plugins;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.internal.util.reflection.Whitebox;
 
@@ -25,6 +26,7 @@ public class RaspberryPiDeploylMojoTest {
         mojo = null;
     }
 
+    @Ignore
     @Test
     public void testExecute() throws Exception {
         assertNotNull(mojo);

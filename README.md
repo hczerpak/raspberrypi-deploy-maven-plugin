@@ -17,7 +17,7 @@ uses user's home directory to upload jar file there.
 <plugin>
     <groupId>com.hczerpak.maven.plugins</groupId>
     <artifactId>raspberrypi-deploy-maven-plugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <executions>
         <execution>
             <phase>install</phase>
