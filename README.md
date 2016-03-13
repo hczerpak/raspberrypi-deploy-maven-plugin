@@ -8,8 +8,8 @@ area network you don't really have to set anything. Some reasonable
 default settings already exist. 
 By default the plugin looks up a computer with network name `raspberrypi`,
 tries to use standard login/password combination of `pi/raspberry` and
-uses user's home directory to deploy project files using pattern 
-`${project.name}/target` which should look familiar to Maven users.
+uses user's home directory to upload jar file there.
+'clean' goal simply removes jar file from raspberrypi if there was any.
 
 ### Maven dependency snippet
 
@@ -20,7 +20,7 @@ uses user's home directory to deploy project files using pattern
     <version>1.0-SNAPSHOT</version>
     <executions>
         <execution>
-            <phase>deploy</phase>
+            <phase>install</phase>
             <goals>
                 <goal>deploy</goal>
             </goals>
