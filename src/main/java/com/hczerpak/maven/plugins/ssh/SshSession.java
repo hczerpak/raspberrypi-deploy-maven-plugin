@@ -101,9 +101,10 @@ public class SshSession implements AutoCloseable {
                     if (in.available() > 0 && in.read() != 0)
                         throw new MojoExecutionException("Upload failed: " + localFile);
                 }
+                Thread.sleep(1000); //FIXME WHY. IS. THIS. REQUIRED for this to work??????
             }
             channel.disconnect();
-        } catch (IOException | JSchException e) {
+        } catch (InterruptedException | IOException | JSchException e) {
             throw new MojoExecutionException(e, e.getLocalizedMessage(), e.getLocalizedMessage());
         }
     }
