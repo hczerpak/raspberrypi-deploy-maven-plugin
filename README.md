@@ -18,17 +18,14 @@ uses user's home directory to upload jar file there.
     <groupId>com.hczerpak.maven.plugins</groupId>
     <artifactId>raspberrypi-deploy-maven-plugin</artifactId>
     <version>0.1-SNAPSHOT</version>
+    <configuration>
+        <jar-filename>MyProject-1.0.1-SNAPSHOT.jar</jar-filename>
+    </configuration>
     <executions>
         <execution>
             <phase>install</phase>
             <goals>
                 <goal>deploy</goal>
-            </goals>
-        </execution>
-        <execution>
-            <phase>clean</phase>
-            <goals>
-                <goal>clean</goal>
             </goals>
         </execution>
     </executions>
