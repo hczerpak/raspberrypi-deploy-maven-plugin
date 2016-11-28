@@ -11,9 +11,6 @@ import java.util.Objects;
 
 /**
  * A facade before JSch complicated API. Why is it so complex?
- * <p>
- * Created by Hubert Czerpak on 13/03/2016
- * using 11" MacBook (can't see sh*t on this screen).
  */
 public class SshSession implements AutoCloseable {
 
