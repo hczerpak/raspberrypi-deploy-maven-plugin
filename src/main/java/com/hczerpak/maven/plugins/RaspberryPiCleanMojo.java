@@ -7,8 +7,6 @@ import org.apache.maven.plugins.annotations.Parameter;
 
 /**
  * Created by Hubert Czerpak on 06/03/2016 using 11" MacBook
- * <p>
- * NOTE: can't see sh*t on this screen.
  */
 public class RaspberryPiCleanMojo extends AbstractMojo {
 
